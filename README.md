@@ -18,6 +18,7 @@
 - `DATETIME` → `TIMESTAMP`
 - `DATE` → `DATE`
 - `TIME` → `TIME`
+- `BLOB` → `BYTEA`
 
 ### MySQL特有语法移除
 - 移除 `ENGINE=InnoDB`
@@ -43,7 +44,7 @@ python mysql2pg.py
 
 ```python
 input_file = "path/to/your/mysql_script.sql"  # 输入的MySQL脚本文件
-output_file = "postgresql_script.sql"         # 输出的PostgreSQL脚本文件
+output_file = "pg_script.sql"         # 输出的PostgreSQL脚本文件
 ```
 
 ## 转换验证
